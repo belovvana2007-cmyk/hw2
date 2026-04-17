@@ -54,8 +54,8 @@ def ans(a):
             cand = ans(a + [i])
             visited[i] = False
             if f3 is None or len(cand) < len(f3):
-                best = cand
-    return best
+                f3 = cand
+    return f3
 
 
 print(ans([]))
